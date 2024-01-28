@@ -192,10 +192,7 @@
         <p>关于如何关联VMware和VirtualBox</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_71274136/article/details/132920024">https://blog.csdn.net/m0_71274136/article/details/132920024</a></p>
 <p>正式开始：</p>
-<p>启动好靶机和kali</p>
-<h3 id="主机发现"><a href="#主机发现" class="headerlink" title="主机发现"></a>主机发现</h3><p><code>ip a</code>查看本机的ip</p>
-<p><code>arp-scan -l -I eth1</code>扫描eth1网卡下的ip分配地址</p>
-<p>用eth1的原因是VMware和VirtualBox关联
+<p>启动好靶机和kalic
       
     </div>
     
@@ -260,10 +257,7 @@
         <p>创建数据库：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database 数据库名</span><br></pre></td></tr></table></figure>
 
-<p>删除数据库：<br><code>mysql -u root -p 数据库</code></p>
-<p>创建数据表：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">create table table_name (</span><br><span class="line">-&gt;id INT NOT NULL AUTO_INCREMENT,</span><br><span class="line">-&gt;admin VARCHAR(100) NOT NULL,</span><br><span class="line">-&gt;passwd VARCHAR(40) NOT NULL,</span><br><span class="line">-&gt;submisssion_date DATE,</span><br><span class="line">-&gt; PRIMARY KEY (id)</span><br><span class="line">-&gt; )ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
-
+<p>删除数据库：<br><code>mysql -u root -p 数据库</code>
       
     </div>
     
@@ -279,6 +273,10 @@
       
       <div class="clearfix"></div>
     </div>
+      
+        <p class="article-more-link">
+          <a  href="/2024/01/27/MySQL%E4%BD%BF%E7%94%A8/#more">learn more >></a>
+        </p>
       
     
   </div>
